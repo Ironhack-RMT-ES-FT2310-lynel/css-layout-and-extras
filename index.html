@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header id="main-header">
-    <h1>Welcome to GAME</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Welcome to <span class="logo">GAME</span></h1>
+    </header>
 
-  <nav id="access-buttons">
-    <button>TOP</button>
-    <button>NEW</button>
-    <button>USED</button>
-    <button>BRAND</button>
-  </nav>
+    <nav id="access-buttons">
+      <a href="#main-header">
+        <button>
+          <i class="fa fa-arrow-up"></i>
+        </button>
+      </a>
+      <a href="#games-section">
+        <button>
+          <i class="fa fa-gamepad"></i>
+        </button>
+      </a>
+      <a href="#used-games-section">
+        <button>
+          <i class="fa fa-recycle"></i>
+        </button>
+      </a>
+      <a href="#brands-section">
+        <button>
+          <i class="fa fa-windows"></i>
+        </button>
+      </a>
+    </nav>
 
-  <section id="games-section">
+    <section id="games-section">
+      <h2>NEW GAMES</h2>
 
-    <h2>NEW GAMES</h2>
+      <div class="games-container">
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg1.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
 
-    <div class="games-container">
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg2.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
 
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg1.jpg" alt="game" />
-        <p>Game Description...</p>
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg3.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
+
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg4.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg2.jpg" alt="game" />
-        <p>Game Description...</p>
+    <section id="used-games-section">
+      <h2>USED GAMES</h2>
+
+      <div class="games-container">
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg5.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
+
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg6.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
+
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg7.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
+
+        <div class="card">
+          <h4>Game Name</h4>
+          <img src="./images/vg8.jpg" alt="game" />
+          <p>Game Description...</p>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg3.jpg" alt="game" />
-        <p>Game Description...</p>
-      </div>
+    <section id="brands-section">
+      <h2>BRANDS</h2>
 
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg4.jpg" alt="game" />
-        <p>Game Description...</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="used-games-section">
-
-    <h2>USED GAMES</h2>
-    
-    <div class="games-container">
-
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg5.jpg" alt="game" />
-        <p>Game Description...</p>
-      </div>
-
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg6.jpg" alt="game" />
-        <p>Game Description...</p>
-      </div>
-
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg7.jpg" alt="game" />
-        <p>Game Description...</p>
-      </div>
-
-      <div class="card">
-        <h4>Game Name</h4>
-        <img src="./images/vg8.jpg" alt="game" />
-        <p>Game Description...</p>
-      </div>
-
-    </div>
-    
-  </section>
-
-  <section id="brands">
-
-    <h2>BRANDS</h2>
-
-    <ul>
-      <li>Nintendo</li>
-      <li>Sony</li>
-      <li>Microsoft</li>
-      <li>Razorblade</li>
-      <li>Logitech</li>
-      <li>Asus</li>
-    </ul>
-
-  </section>
-
-</body>
+      <ul>
+        <li>Nintendo</li>
+        <li>Sony</li>
+        <li>Microsoft</li>
+        <li>Razorblade</li>
+        <li>Logitech</li>
+        <li>Asus</li>
+      </ul>
+    </section>
+  </body>
 </html>

@@ -6,7 +6,6 @@ body {
 
 #main-header {
   background-color: white;
-  color: #a70184;
   padding: 5px 0; /* top&down left&right */
   margin: 20px 5% 20px 5%; /* top right down left */
 }
@@ -16,7 +15,7 @@ body {
   width: 120px;
 }
 
-#brands li {
+#brands-section li {
   background-color: white;
   padding: 10px;
   border: 2px solid black; 
@@ -24,3 +23,124 @@ body {
   margin-right: 40px; /* same as native left separation for bullet point */
 }
 
+.logo {
+  color: #a70184;
+} 
+
+#access-buttons i {
+  color: #a70184;
+  font-size: 20px;
+}
+
+#access-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+/* PSEUDOCLASES */
+
+#access-buttons button:hover {
+  background-color: #a70184;
+}
+
+/* cuando el usuario haga hover sobre el boton, el icono cambia su estilo */
+#access-buttons button:hover i {
+  color: black
+}
+
+#access-buttons a {
+  text-decoration: none;
+}
+
+#access-buttons button:active {
+  background-color: black;
+}
+
+#access-buttons button:active i {
+  color: #a70184;
+}
+
+
+/* PSEUDOELEMENTOS */
+
+#brands-section li::marker {
+  color: #a70184;
+  content: "👽"
+}
+
+ul {
+  font-size: 20px;
+}
+
+#brands-section li::first-letter {
+  color: #a70184;
+  /* font-size: 26px; */
+  font-size: 1.5em; /* 150% del tamaño original de la fuente */
+}
+
+#brands-section li:hover::after {
+  content: "EN OFERTA! 2x1";
+}
+
+
+#games-section, #used-games-section, #brands-section {
+  background-color: lightgray;
+}
+
+#games-section h2, #used-games-section h2, #brands-section h2 {
+  color: darkgray;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #55595c;
+  color: white;
+  border-radius: 10px;
+
+  width: 200px;
+  height: 400px;
+
+}
+
+/* FLEXBOX */
+
+#access-buttons {
+  background-color: lightgray;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 20px;
+
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  flex-grow: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+/* Transisiones (EXTRA) */
+
+.card {
+  transition: flex-grow 0.2s ease-in
+}
