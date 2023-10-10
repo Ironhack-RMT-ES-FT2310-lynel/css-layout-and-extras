@@ -1,3 +1,8 @@
+html {
+  font-size: 16px; /* predeterminado */
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #55595c;
   margin: 0; /* resets the default 8px from most browsers */
@@ -92,6 +97,8 @@ ul {
   color: darkgray;
   background-color: white;
   text-decoration: underline;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .card {
@@ -144,3 +151,110 @@ ul {
 .card {
   transition: flex-grow 0.2s ease-in
 }
+
+
+/* POSITION */
+
+#access-buttons {
+  /* position: fixed; */
+  position: sticky;
+
+  top: 0;
+  /* left: 40px; */
+
+}
+
+
+/* #main-header {
+  position: relative;
+
+  top: -100px;
+  right: 100px;
+} */
+
+
+#access-buttons span {
+  /* position: relative;
+  top: 22px */
+
+  position: absolute;
+
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  /* truco en posicionamiento para centrar elementos. left: 0 y right: 0 */
+
+}
+
+#access-buttons button {
+  /* asignamos position al boton para poder mover los span de forma absoluta de acuerdo a los botones */
+  position: relative;
+}
+
+/* asignar los tamaños de texto de todas las etiquetas */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+/* De aqui atras, todos los estilos aplican para tamaño mobile */
+
+#responsive-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 470px) {
+
+  /* estilos solo para tablets */
+
+  body {
+    background-color: black;
+  }
+
+  #access-buttons {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  /* estilos para portatiles */
+
+  body {
+    background-color: red;
+  }
+
+  #access-buttons {
+    justify-content: space-evenly;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  #responsive-container {
+    flex-direction: row;
+  }
+}
+
+
